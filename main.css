@@ -1,0 +1,71 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    width:100%;
+    display: -webkit-box;  /* body je na vrhu stabla, obvime će sve unutar njega biti fleksibilno */
+    -webkit-box-pack:center; /* određuje kako će biti pozicionirani boxovi unutar body-a */
+}
+
+#big_wrapper{
+    max-width:1000px;
+    margin: 20px 0px; /* gore-dolje */
+    display:-webkit-box;   /* i boxovi unutar "big_wrapper-a" mogu mijenjati veličinu tj. imaju svojstvo "box" */
+    -webkit-box-orient: vertical;    /* svi elementi su postavljeni jedan iznad-ispod drugog */
+    -webkit-box-flex: 1;   /* da elementi budu fleksibilni, 1-fleksibilno/0-fiksirano mijenjanjem veličine prozora, mijenja se i veličina boksa */
+
+}
+table, th, td {
+    border: 1px solid black;
+
+}
+
+a:link{
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: lightblue;
+    margin-bottom: 10px;
+}
+th {
+    text-align: center;
+    height: 30px;
+}
+td {
+    text-align: center;
+    height: 20px;
+}
+tr:hover {
+    background-color: #00e600
+}
+#izmeni_div {
+    display:-webkit-box;   /* i boxovi unutar "big_wrapper-a" mogu mijenjati veličinu tj. imaju svojstvo "box" */
+    -webkit-box-orient: vertical;    /* svi elementi su postavljeni jedan iznad-ispod drugog */
+    -webkit-box-flex: 1;   /* da elementi budu fleksibilni, 1-fleksibilno/0-fiksirano mijenjanjem veličine prozora, mijenja se i veličina boksa */
+    margin:180px;
+    padding: 50px;
+    text-align:center;
+    border:1px solid blue;
+    background:-webkit-radial-gradient(center, circle, #00e600 0%, lightblue 50%); /* Prvi atribut, odakle počinje, zatim kako će izgledati širenje, i dvije boje - koliko će biti zastupljene */
+    -webkit-border-radius:25px;  /* Zaobljenost uglova */
+    -webkit-box-shadow:rgb(110,110,110) -8px -8px 8px; /* Minusi prebacuju sijenku u ovom slučaju na desnu i gornju stranu */
+
+}
+#izmeni {
+    margin: 5px;
+    height: 25px;
+    width: 200px;
+}
+#dodavanje {
+    margin-left: 450px;
+    background-color: #ffff1a;
+}
+#racun {
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+}
